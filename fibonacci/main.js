@@ -21,8 +21,7 @@ function fibonacci(numero){
         salida = [0,1]
     }else{
         for(let i = 2 ;i <= numero ; i++){
-            suma = salida[i-1] + salida[i-2]
-            salida.push(suma)
+            salida[i] = salida[i-1] + salida[i-2]
             console.log(salida)
         }
     }
